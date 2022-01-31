@@ -25,15 +25,6 @@
     install_recommends: no
     state: present
 
-# - name: Configure /etc/elasticsearch/elasticsearch.yml
-#   template:
-#     src: elasticsearch.yml.j2
-#     dest: "/etc/elasticsearch/elasticsearch.yml"
-#     owner: root
-#     group: elasticsearch
-#     mode: 0660
-#   notify: restart elasticsearch
-
 - name: Enable and start service
   service:
     name: jenkins
